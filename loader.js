@@ -1,9 +1,10 @@
 window.loader = {};
 loader.obj = (()=>{return document.currentScript;})();
 loader.data = (()=>{return document.querySelectorAll("[class=loader]").hasAttribute(/data-.*/gi);})();
-loader.libcheck = {jquery: ($ !== undefined), data: loader.data};
-if (libcheck.jquery) {
-  
+loader.libcheck.func._libcheck = (jsonobj) => {
+  for (let i = 0; i < jsonobj.length; i++) {
+    
+  }
 }
 {
   let div = $("div[class='loader']")[0];
