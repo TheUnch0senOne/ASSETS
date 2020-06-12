@@ -1,9 +1,10 @@
-if (document.script.src.includes("jquery") !== true) {
-  console.log("Generating jquery");
-  let scr = document.createElement("SCRIPT");
-  scr.async = "true";
-  scr.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-  document.head.appendchild(scr);
+window.loader = {};
+loader.obj = (()=>{return document.currentScript;})();
+loader.data = (()=>{return document.querySelectorAll("[class=loader]").hasAttribute(/data-.*/gi);})();
+loader.libcheck.func._libcheck = (jsonobj) => {
+  for (let i = 0; i < jsonobj.length; i++) {
+    
+  }
 }
 {
   let div = $("div[class='loader']")[0];
